@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="questionnaire">
+        <h1>What To Do?</h1>
+        <form id="questionForm">
+            <label for="mood">Mood or Current State:</label>
+            <select id="mood" required>
+                <option value="" disabled selected>Select</option>
+                <option value="bored">Bored</option>
+                <option value="energetic">Energetic</option>
+                <option value="creative">Creative</option>
+                <option value="relaxed">Relaxed</option>
+                <option value="stressed">Stressed</option>
+                <option value="curious">Curious</option>
+                <option value="adventurous">Adventurous</option>
+                <option value="productive">Productive</option>
+                <option value="social">Social</option>
+            </select><br>
+
+            <label for="activity-category">Activity Category:</label>
+            <select id="activity-category" required>
+                <option value="" disabled selected>Select</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="indoor">Indoor</option>
+                <option value="creative">Creative</option>
+                <option value="educational">Educational</option>
+                <option value="fitness">Fitness</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="food">Food</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="travel">Travel</option>
+                <option value="social">Social</option>
+            </select><br>
+
+
+
+            <label for="group-size">Group Size:</label>
+            <select id="group-size" required>
+                <option value="" disabled selected>Select</option>
+                <option value="alone">Alone</option>
+                <option value="with-partner">With a partner</option>
+                <option value="with-friends">With friends</option>
+                <option value="with-family">With family</option>
+                <option value="no-preference">No preference</option>
+            </select><br>
+
+            <label for="activity-level">Physical Activity Level:</label>
+            <select id="activity-level" required>
+                <option value="" disabled selected>Select</option>
+                <option value="highly-active">Highly active</option>
+                <option value="moderately-active">Moderately active</option>
+                <option value="low-activity">Low activity</option>
+                <option value="sedentary">Sedentary</option>
+            </select><br>
+
+            <label for="duration">Duration:</label>
+            <select id="duration" required>
+                <option value="" disabled selected>Select</option>
+                <option value="short">Short (15-30 minutes)</option>
+                <option value="medium">Medium (1-2 hours)</option>
+                <option value="long">Long (half a day or more)</option>
+            </select><br>
+
+            <label for="budget">Budget:</label>
+            <select id="budget" required>
+                <option value="" disabled selected>Select</option>
+                <option value="free">Free</option>
+                <option value="low-cost">Low-cost</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+                <option value="no-budget-preference">No budget preference</option>
+            </select><br>
+
+            <label>Interests and Hobbies:</label><br>
+            <input type="checkbox" id="art" name="interests" value="art">
+            <label for="art">Art</label><br>
+
+            <input type="checkbox" id="cooking" name="interests" value="cooking">
+            <label for="cooking">Cooking</label><br>
+
+            <input type="checkbox" id="gaming" name="interests" value="gaming">
+            <label for="gaming">Gaming</label><br>
+
+            <input type="checkbox" id="gardening" name="interests" value="gardening">
+            <label for="gardening">Gardening</label><br>
+
+            <input type="checkbox" id="technology" name="interests" value="technology">
+            <label for="technology">Technology</label><br>
+
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br>
+
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+
+            <label>Weather Preferences:</label><br>
+            <input type="radio" id="indoor-activities" name="weather-preferences" value="indoor" required>
+            <label for="indoor-activities">Indoor activities only</label><br>
+            <input type="radio" id="outdoor-activities" name="weather-preferences" value="outdoor">
+            <label for="outdoor-activities">Outdoor activities only</label><br>
+            <input type="radio" id="no-weather-preference" name="weather-preferences" value="no-preference">
+            <label for="no-weather-preference">No weather preference</label><br>
+
+            <label for="skill-level">Skill Level:</label>
+            <select id="skill-level" required>
+                <option value="" disabled selected>Select</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="no-skill-level-preference">No skill level preference</option>
+            </select><br>
+
+            <label>Dietary Preferences:</label><br>
+            <input type="checkbox" id="vegetarian" name="diet-preferences" value="vegetarian">
+            <label for="vegetarian">Vegetarian</label><br>
+            <input type="checkbox" id="non-vegetarian" name="diet-preferences" value="non-vegetarian">
+            <label for="non-vegetarian">Non-Vegetarian</label><br>
+            <!-- Add more dietary preferences... -->
+
+            <label for="age-group">Age Group:</label>
+            <select id="age-group" required>
+                <option value="" disabled selected>Select</option>
+                <option value="kids">Kids (0-12)</option>
+                <option value="teens">Teens (13-19)</option>
+                <option value="young-adults">Young adults (20-35)</option>
+                <option value="adults">Adults (36-65)</option>
+                <option value="seniors">Seniors (65+)</option>
+            </select><br>
+
+            <label for="location-method">Location Method:</label><br>
+            <select id="location-method" required>
+                <option value="" disabled selected>Select</option>
+                <option value="gps">Use GPS to detect current location</option>
+                <option value="manual">Manual input of location</option>
+            </select><br>
+
+            <label for="seasonal-preferences">Seasonal Preferences:</label><br>
+            <select id="seasonal-preferences" required>
+                <option value="" disabled selected>Select</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall/Autumn</option>
+                <option value="winter">Winter</option>
+                <option value="no-preference">No seasonal preference</option>
+            </select><br>
+
+            <label for="event-specifics">Event Specifics (Optional):</label><br>
+            <select id="event-specifics">
+                <option value="" disabled selected>Select</option>
+                <option value="music">Music</option>
+                <option value="cultural">Cultural</option>
+                <option value="sports">Sports</option>
+                <option value="food-drink">Food and Drink</option>
+                <option value="family-friendly">Family-Friendly</option>
+                <option value="tech-science">Tech and Science</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <button type="submit">Get Suggestions</button>
+        </form>
+    </div>
+
+    <div id="suggestions" class="hidden">
+        <h2>Suggestions:</h2>
+        <ul id="suggestionList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
